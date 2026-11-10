@@ -1,0 +1,14 @@
+(()=>{
+const manifest=window.ONAFES_MANIFEST,tiles=document.getElementById('tiles'),viewer=document.getElementById('viewer'),panel=document.querySelector('.preview');
+const labels={card:'بطاقة تعليمية',activity:'تجربة تفاعلية',media:'فيديو تعليمي'};
+const icons={card:'<rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h3"/>',activity:'<path d="M9 3h6m-5 0v6L4 19q-1 2 2 2h12q3 0 2-2L14 9V3M7 15h10"/>',media:'<rect x="3" y="5" width="18" height="14" rx="3"/><path d="m10 9 5 3-5 3z"/>'};
+let selected=manifest.assets.some(a=>a.id===location.hash.slice(1))?location.hash.slice(1):'card-01';
+const kind=a=>a.id==='audio'?'ملخص صوتي':a.id==='lab'?'معمل افتراضي':labels[a.kind];
+const embed=new OnafesEmbed({container:viewer,manifest,baseUrl:new URL('./',location.href).href,onEvent:e=>{
+ if(e.type==='opened'){selected=e.assetId;const a=manifest.assets.find(x=>x.id===selected);viewer.hidden=false;document.getElementById('closed').hidden=true;document.getElementById('current-title').textContent=a.title;document.getElementById('current-kind').textContent=kind(a);document.querySelectorAll('.tile').forEach(b=>b.setAttribute('aria-current',String(b.dataset.id===selected)));history.replaceState(null,'','#'+selected);}
+ if(e.type==='close'){viewer.hidden=true;document.getElementById('closed').hidden=false;}
+}});
+for(const a of manifest.assets){const b=document.createElement('button');b.type='button';b.className='tile';b.dataset.id=a.id;b.dataset.kind=a.kind;b.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">'+icons[a.kind]+'</svg>';const title=document.createElement('span');title.className='tile-title';title.textContent=a.title.replace(' — البطاقة','').replace(' — المشغّل','');const label=document.createElement('span');label.className='tile-kind';label.textContent=kind(a);b.append(title,label);b.addEventListener('click',()=>embed.open(a.id));tiles.append(b);}
+const expand=document.getElementById('expand');function toggle(force){const full=force??!panel.classList.contains('expanded');panel.classList.toggle('expanded',full);expand.setAttribute('aria-pressed',String(full));expand.setAttribute('aria-label',full?'تصغير البطاقة':'تكبير البطاقة');expand.querySelector('span').textContent=full?'تصغير':'تكبير';}
+expand.addEventListener('click',()=>toggle());document.addEventListener('keydown',e=>{if(e.key==='Escape')toggle(false)});document.getElementById('reopen').onclick=()=>embed.open(selected);window.addEventListener('pagehide',()=>embed.pause());document.addEventListener('visibilitychange',()=>{if(document.hidden)embed.pause()});embed.open(selected);
+})();
