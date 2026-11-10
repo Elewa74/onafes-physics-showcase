@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
+<title>التجربة التفاعلية | أنافس</title>
+
+
+
+
+<link href="../shared/fonts.css" rel="stylesheet"/><link href="../shared/styles/interactive.css" rel="stylesheet"/><link href="../shared/base.css" rel="stylesheet"/><link href="data:," rel="icon"/></head>
+<body data-asset-id="interactive" data-kind="activity"><nav aria-label="التنقل" class="asset-nav"><a data-onafes-close="" href="../index.html">رجوع</a><span>التجربة التفاعلية</span></nav>
+<article aria-label="بطاقة تفاعلية: المقاومة والقوة الدافعة الكهربائية" class="card" data-code="PHY-12-U4-L1">
+<header class="band">
+<svg aria-hidden="true" class="motif" viewbox="0 0 150 110"><g fill="#fff" stroke="#fff" stroke-linecap="round" stroke-width="4"><line x1="14" x2="136" y1="22" y2="22"></line><circle cx="96" cy="22" r="9"></circle><line x1="14" x2="136" y1="55" y2="55"></line><circle cx="44" cy="55" r="9"></circle><line x1="14" x2="136" y1="88" y2="88"></line><circle cx="118" cy="88" r="9"></circle></g></svg>
+<div class="top">
+<span class="badge"><svg aria-hidden="true" fill="none" height="16" stroke="#7a58ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"></path></svg>تجربة تفاعلية</span>
+</div>
+<div class="ttl"><h1>غيّر القيم… وشاهد النتيجة</h1></div>
+<div class="sub">الفيزياء · الثاني عشر · المقاومة والقوة الدافعة الكهربائية</div>
+</header>
+<div aria-label="اختر التجربة" class="seg" role="tablist">
+<span class="pill" id="pill"></span>
+<button aria-controls="p1" aria-selected="true" data-i="0" id="t1" role="tab">
+<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><path d="M2 12h3l2-5 3 10 3-10 3 10 2-5h4"></path></svg>ما الذي يغيّر<br/>المقاومة؟</button>
+<button aria-controls="p2" aria-selected="false" data-i="1" id="t2" role="tab">
+<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><path d="M4 20V4M4 20h16"></path><path d="M5 19L17 7"></path><path d="M8 19c5 0 7-1 9-11" opacity=".55"></path></svg>أوميّ<br/>أم لا أوميّ؟</button>
+<button aria-controls="p3" aria-selected="false" data-i="2" id="t3" role="tab">
+<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><rect height="10" rx="2" width="16" x="3" y="7"></rect><path d="M21 10v4M8 12h4M10 10v4"></path></svg>البطارية<br/>الحقيقية</button>
+</div>
+<!-- ========== PANEL 1 ========== -->
+<section aria-labelledby="t1" class="panel on" id="p1" role="tabpanel">
+<div class="q"><span class="dot"></span>غيّر طول السلك وقطره ومادته، وراقب مقاومته.</div>
+<div class="stick">
+<div class="stage">
+<svg aria-label="سلك موصل يتغير طوله وسمكه ولونه حسب القيم المختارة" direction="ltr" id="wireSvg" role="img" style="direction:ltr" viewbox="0 0 357 172">
+<defs>
+<lineargradient id="wg" x1="0" x2="0" y1="0" y2="1"><stop id="wg1" offset="0" stop-color="#e7a56a"></stop><stop id="wg2" offset=".55" stop-color="#c27a3a"></stop><stop id="wg3" offset="1" stop-color="#8f5426"></stop></lineargradient>
+<marker id="arI" markerheight="6" markerwidth="6" orient="auto" refx="8" refy="5" viewbox="0 0 10 10"><path d="M0 0L10 5L0 10z" fill="#e99f09"></path></marker>
+<clippath id="wclip"><rect height="10" id="wclipr" rx="5" width="10" x="0" y="0"></rect></clippath>
+</defs>
+<g id="ruler"></g>
+<path d="" fill="none" id="leadL" stroke="#2d2b38" stroke-linecap="round" stroke-width="2.4"></path>
+<path d="" fill="none" id="leadR" stroke="#2d2b38" stroke-linecap="round" stroke-width="2.4"></path>
+<g id="termL"><circle fill="#fde3d6" r="11" stroke="#d9541c" stroke-width="1.8"></circle><text fill="#b4400f" font-family="IBM Plex Sans Arabic" font-size="14" font-weight="700" style="stroke:none" text-anchor="middle" y="4.5">+</text></g>
+<g id="termR"><circle fill="#e8f1fb" r="11" stroke="#1f5c96" stroke-width="1.8"></circle><text fill="#1f5c96" font-family="IBM Plex Sans Arabic" font-size="15" font-weight="700" style="stroke:none" text-anchor="middle" y="4.5">−</text></g>
+<g id="wire">
+<rect fill="url(#wg)" height="10" id="wbody" width="10" x="0" y="0"></rect>
+<ellipse cx="0" cy="0" fill="url(#wg)" id="wend" rx="3" ry="5" stroke="rgba(0,0,0,.18)"></ellipse>
+<g clip-path="url(#wclip)" id="elec"></g>
+<rect fill="#fff" height="3" id="wshine" opacity=".35" rx="1.5" width="10" x="0" y="0"></rect>
+<ellipse cx="0" cy="0" fill="#fff" id="wstart" rx="3" ry="5" stroke="rgba(0,0,0,.25)" stroke-width="1"></ellipse>
+</g>
+<g fill="#4d5866" font-family="STIX Two Text" font-size="13">
+<line id="dimLl" stroke="#9aa6b5" stroke-width="1"></line>
+<text font-style="italic" id="dimLt" text-anchor="middle"></text>
+<line id="dimDl" stroke="#9aa6b5" stroke-width="1"></line>
+<text font-style="italic" id="dimDt"></text>
+</g>
+<line marker-end="url(#arI)" stroke="#e99f09" stroke-width="2.6" x1="128" x2="228" y1="20" y2="20"></line>
+<text fill="#9a6500" font-family="STIX Two Text" font-size="14" font-style="italic" x="236" y="24.5">I</text>
+</svg>
+<span class="hint">حركة الإلكترونات (تمثيل توضيحي)</span>
+</div>
+<div class="result">
+<div aria-live="polite" class="big"><small>مقاومة السلك</small><div class="val"><i>R</i> = <span data-exact="" id="Rval">—</span><span class="unit" id="Runit">Ω</span></div></div>
+<div class="ratio" id="ratioBox"><b id="ratioV">×1</b><span id="ratioT">مقارنة بالقيمة السابقة</span></div>
+</div>
+</div>
+<div class="ctl">
+<div class="sl">
+<label class="lab" for="sL"><span>طول السلك <span class="m">L</span></span><span class="v" id="vL"></span></label>
+<input id="sL" max="2" min="0.2" step="0.05" type="range" value="1"/>
+<div class="ends"><span>0.20 m</span><span>2.00 m</span></div>
+</div>
+<div class="sl">
+<label class="lab" for="sD"><span>قطر السلك <span class="m">d</span> <small style="color:var(--mut);font-weight:500">(<bdi dir="ltr"><span class="m">A</span> = π<span class="m">d</span>²/4</bdi>)</small></span><span class="v" id="vD"></span></label>
+<input id="sD" max="1" min="0.1" step="0.01" type="range" value="0.5"/>
+<div class="ends"><span>0.10 mm</span><span>1.00 mm</span></div>
+</div>
+<div class="sl" style="gap:6px">
+<span class="lab"><span>مادة السلك</span></span>
+<div aria-label="مادة السلك" class="chips" id="mats" role="group"></div>
+<div class="matinfo"><span>المقاوميّة عند <span dir="ltr">20 °C</span> · كتاب الطالب، الجدول (1)</span><span class="mu" id="rhoInfo"></span></div>
+</div>
+<div class="quick">
+<button class="qb" id="q2L" type="button">ضاعف الطول <span class="mu">×2</span></button>
+<button class="qb" id="q2D" type="button">ضاعف القطر <span class="mu">×2</span></button>
+</div>
+</div>
+<div class="eq">
+<div class="row" id="eq1"></div>
+<div class="cap">مقاومة موصل منتظم بدلالة أبعاده، عند درجة حرارة ثابتة <span dir="ltr">(20 °C)</span></div>
+</div>
+<div aria-live="polite" class="note" id="note1"><span aria-hidden="true" class="ic"><svg fill="none" height="18" stroke="#1f5c96" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24" width="18"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"></path><circle cx="12" cy="12" r="3"></circle></svg></span><div><b>لاحظ:</b> <span id="note1t"></span></div></div>
+<div class="sum"><span aria-hidden="true" class="ic"><svg fill="none" height="18" stroke="#3e2f7a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24" width="18"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"></path></svg></span><div><span class="k">الخلاصة</span><span>تتناسب المقاومة طرديًا مع الطول، وعكسيًا مع مساحة المقطع، وتعتمد على نوع المادة: <bdi class="m" dir="ltr">R = ρL/A</bdi>.</span></div></div>
+</section>
+<!-- ========== PANEL 2 ========== -->
+<section aria-labelledby="t2" class="panel" id="p2" role="tabpanel">
+<div class="q"><span class="dot"></span>غيّر فرق الجهد، وتتبّع النقطة على المنحنى البياني.</div>
+<div class="gcard">
+<div class="ghead"><span class="tag" style="background:#e8f1fb;color:#1f5c96">أ</span>مقاومة (موصل أوميّ)<span class="live" id="ohmLive"></span></div>
+<svg aria-label="منحنى (I–V) لمقاومة: العلاقة بين التيار وفرق الجهد خط مستقيم يمر بنقطة الأصل" direction="ltr" id="gOhm" role="img" style="direction:ltr" viewbox="0 0 340 196"></svg>
+<div class="kv">
+<div><small>فرق الجهد</small><b id="kOV"></b></div>
+<div><small>التيار</small><b id="kOI"></b></div>
+<div class="stable"><small><bdi class="m" dir="ltr">ΔV/I</bdi></small><b id="kOR"></b></div>
+</div>
+<div class="sl">
+<label class="lab" for="sOV"><span>فرق الجهد <span class="m">ΔV</span></span><span class="v" id="vOV"></span></label>
+<input id="sOV" max="10" min="0" step="0.1" type="range" value="4"/>
+</div>
+<div class="sl">
+<label class="lab" for="sOR"><span>مقاومة الموصل <span class="m">R</span></span><span class="v" id="vOR"></span></label>
+<input id="sOR" max="50" min="10" step="5" style="--c1:#126e84;--c2:#2aa3b8" type="range" value="20"/>
+</div>
+</div>
+<div class="gcard">
+<div class="ghead"><span class="tag" style="background:#fdeee6;color:#b4400f">ب</span>الثنائي (مادة لا أوميّة)<span class="live" id="diLive"></span></div>
+<svg aria-label="منحنى (I–V) للثنائي: العلاقة بين التيار وفرق الجهد غير خطية" direction="ltr" id="gDi" role="img" style="direction:ltr" viewbox="0 0 340 196"></svg>
+<div class="kv">
+<div><small>فرق الجهد</small><b id="kDV"></b></div>
+<div><small>التيار</small><b id="kDI"></b></div>
+<div class="accent"><small><bdi class="m" dir="ltr">ΔV/I</bdi></small><b id="kDR"></b></div>
+</div>
+<div class="sl">
+<label class="lab" for="sDV"><span>فرق الجهد <span class="m">ΔV</span></span><span class="v" id="vDV"></span></label>
+<input id="sDV" max="0.75" min="-1" step="0.01" style="--c1:#d9541c;--c2:#f27a3f" type="range" value="0.6"/>
+<div class="ends"><span>−1.00 V</span><span>0.75 V</span></div>
+</div>
+</div>
+<div aria-live="polite" class="note" id="note2"><span aria-hidden="true" class="ic"><svg fill="none" height="18" stroke="#1f5c96" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24" width="18"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"></path><circle cx="12" cy="12" r="3"></circle></svg></span><div><b>لاحظ:</b> <span id="note2t"></span></div></div>
+<div class="sum"><span aria-hidden="true" class="ic"><svg fill="none" height="18" stroke="#3e2f7a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24" width="18"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"></path></svg></span><div><span class="k">الخلاصة</span><span>الموصل الأوميّ منحناه خط مستقيم ومقاومته ثابتة عند ثبات درجة الحرارة، أمّا المادة اللا أوميّة فتتغيّر مقاومتها بتغيّر فرق الجهد.</span></div></div>
+</section>
+<!-- ========== PANEL 3 ========== -->
+<section aria-labelledby="t3" class="panel" id="p3" role="tabpanel">
+<div class="q"><span class="dot"></span>بطارية لها قوة دافعة كهربائية <bdi class="m">ε</bdi> ومقاومة داخلية <bdi class="m">r</bdi></div>
+<div class="stage">
+<svg aria-label="بطارية لها قوة دافعة كهربائية ومقاومة داخلية، موصولة بمقاومة متغيرة نضبط بها التيار" direction="ltr" id="batSvg" role="img" style="direction:ltr" viewbox="0 0 357 200"></svg>
+</div>
+<div class="stick">
+<div class="row2">
+<div class="vbar"><svg aria-label="عمود الجهد: القوة الدافعة الكهربائية تساوي فرق الجهد بين القطبين مضافًا إليه الهبوط في الجهد داخل البطارية" direction="ltr" height="180" id="vbarSvg" role="img" style="direction:ltr" viewbox="0 0 80 180" width="80"></svg><small>توزيع <bdi class="m">ε</bdi></small></div>
+<div class="gcard" style="flex:1;min-width:0;padding:8px 6px 6px"><svg aria-label="العلاقة بين فرق الجهد بين قطبي البطارية والتيار: خط مستقيم مقطعه الرأسي القوة الدافعة الكهربائية وميله سالب المقاومة الداخلية" direction="ltr" id="gTerm" role="img" style="direction:ltr" viewbox="0 0 250 190"></svg></div>
+</div>
+</div>
+<div class="ctl">
+<div class="sl">
+<label class="lab" for="sE"><span>القوة الدافعة <span class="m">ε</span></span><span class="v" id="vE"></span></label>
+<input id="sE" max="12" min="1.5" step="0.1" type="range" value="9"/>
+</div>
+<div class="sl">
+<label class="lab" for="sr"><span>المقاومة الداخلية <span class="m">r</span></span><span class="v" id="vr"></span></label>
+<input id="sr" max="2" min="0" step="0.05" style="--c1:#d9541c;--c2:#f27a3f" type="range" value="1"/>
+</div>
+<div class="sl">
+<label class="lab" for="sI"><span>التيار <span class="m">I</span> <small style="color:var(--mut);font-weight:500">(نضبطه بالمقاومة المتغيّرة)</small></span><span class="v" id="vI"></span></label>
+<input class="fz" id="sI" max="5" min="0" step="0.05" style="--c1:#e99f09;--c2:#fdc705" type="range" value="0.5"/>
+<div class="fzwrap"><span class="fzlab" id="fzLab"></span></div>
+<div class="ends" style="margin-top:2px"><span>0 A</span><span>5.00 A</span></div>
+</div>
+</div>
+<div class="eq">
+<div class="row" id="eq3a"></div>
+<div class="row" id="eq3b" style="font-size:16px"></div>
+<div class="cap">فرق الجهد بين قطبي البطارية = القوة الدافعة الكهربائية − الهبوط في الجهد داخلها</div>
+<div class="cap" id="eq3c" style="color:var(--ink2)"></div>
+</div>
+<div aria-live="polite" class="note" id="note3"><span aria-hidden="true" class="ic"><svg fill="none" height="18" stroke="#1f5c96" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24" width="18"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"></path><circle cx="12" cy="12" r="3"></circle></svg></span><div><b>لاحظ:</b> <span id="note3t"></span></div></div>
+<div class="sum"><span aria-hidden="true" class="ic"><svg fill="none" height="18" stroke="#3e2f7a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24" width="18"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"></path></svg></span><div><span class="k">الخلاصة</span><span>كلما زاد التيار المار في البطارية زاد الهبوط <bdi class="m" dir="ltr">Ir</bdi> في الجهد داخلها، فقلّ فرق الجهد بين قطبيها عن قوتها الدافعة الكهربائية <bdi class="m">ε</bdi>.</span></div></div>
+</section>
+<footer class="foot"><span>كتاب الطالب · فيزياء 12 · ص 132–141</span><b>أنافس · الأردن</b></footer>
+</article>
+
+<div class="integration-status" hidden="" id="onafes-status" role="status"></div><script defer="" src="../shared/scripts/interactive.js"></script><script defer="" src="../shared/runtime.js"></script></body>
+</html>

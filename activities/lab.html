@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>المعمل الافتراضي | أنافس</title>
+
+
+
+
+<link href="../shared/fonts.css" rel="stylesheet"/><link href="../shared/styles/lab.css" rel="stylesheet"/><link href="../shared/base.css" rel="stylesheet"/><link href="data:," rel="icon"/></head>
+<body data-asset-id="lab" data-kind="activity"><nav aria-label="التنقل" class="asset-nav"><a data-onafes-close="" href="../index.html">رجوع</a><span>المعمل الافتراضي</span></nav>
+<div class="wrap">
+<main class="card" id="card">
+<header class="band">
+<div class="toprow">
+<span class="badge"><svg aria-hidden="true" fill="none" height="16" stroke="#7a58ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16"><path d="M9 3h6M10 3v6l-5.5 9.5A2 2 0 0 0 6.2 21h11.6a2 2 0 0 0 1.7-2.5L14 9V3"></path><path d="M7.5 15h9"></path></svg>تجربة عملية</span>
+</div>
+<div class="ttl"><h1>استنتاج العوامل التي تعتمد عليها المقاومة الكهربائية لموصل</h1></div>
+<span class="sub">الفيزياء · الثاني عشر · الوحدة 4: التيار الكهربائي</span>
+</header>
+<nav aria-label="التجارب" class="tabs" role="tablist">
+<span class="pill" id="pill"></span>
+<button aria-selected="true" class="on" data-tab="exp1" role="tab">التجربة 1<span class="tsub">العوامل المؤثرة في المقاومة</span></button>
+<button aria-selected="false" data-tab="exp0" role="tab">تجربة استهلالية<span class="tsub">العلاقة بين <bdi class="math">ΔV</bdi> و <bdi class="math">I</bdi></span></button>
+</nav>
+<!-- ================= EXPERIMENT 1 ================= -->
+<section class="pane on" id="exp1">
+<details class="safety" id="safe1" open=""><summary><svg aria-hidden="true" class="ic" fill="none" height="20" stroke="#8a5a00" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="20"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"></path><path d="M12 9v4M12 17h.01"></path></svg>إرشادات السلامة<svg class="chev" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-width="2.2" viewbox="0 0 24 24" width="16"><path d="M6 9l6 6 6-6"></path></svg></summary><p>الحذر من لمس الوصلات الكهربائية غير المعزولة والعناصر الساخنة.</p></details>
+<div class="stepper" id="stepper">
+<span class="bar" id="sbar"></span>
+<button class="step cur" data-s="0"><span class="dot">1</span><span>الطول</span></button>
+<button class="step" data-s="1" disabled=""><span class="dot">2</span><span>مساحة المقطع</span></button>
+<button class="step" data-s="2" disabled=""><span class="dot">3</span><span>نوع المادة</span></button>
+<button class="step" data-s="3" disabled=""><span class="dot">4</span><span>التحليل</span></button>
+</div>
+<div class="sec">
+<div class="goal" id="goal"></div>
+<div class="rig" id="rigWrap">
+<svg aria-label="موضع المسمار المدبب على المسطرة المترية (دارة: مصدر جهد ثابت، وأميتر على التوالي، وفولتميتر على التوازي مع جزء السلك)" aria-valuemax="100" aria-valuemin="10" aria-valuenow="20" aria-valuetext="20 cm" direction="ltr" id="rig" role="slider" style="direction:ltr" tabindex="0" viewbox="0 0 360 236"></svg>
+<div class="meters">
+<div class="meter" id="mA"><div class="lbl">الأميتر<span class="sym">I</span></div><div class="val" id="vA">— <small>mA</small></div></div>
+<div class="meter" id="mV"><div class="lbl">الفولتميتر<span class="sym">ΔV</span></div><div class="val" id="vV">— <small>V</small></div></div>
+</div>
+</div>
+<!-- part-specific extras -->
+<div class="hidden" id="p2extra">
+<div class="mic">
+<svg aria-label="قياس قطر السلك بالميكروميتر" direction="ltr" id="micro" role="img" style="direction:ltr;display:block;width:100%;height:auto" viewbox="0 0 340 120"></svg>
+<div class="actions" style="margin-top:4px">
+<button class="btn sec2" id="measThin">قِس قطر السلك الأول</button>
+<button class="btn sec2" id="measThick">قِس قطر السلك الثاني</button>
+</div>
+</div>
+</div>
+<div class="hidden" id="p3extra">
+<div class="chips" id="mats">
+<button class="chip" data-m="nichrome"><span class="tick">✓</span><span class="sw" style="background:linear-gradient(90deg,#a7abb6,#7d8190)"></span>نيكروم<small>1.5 × 10⁻⁶ Ω·m</small></button>
+<button class="chip" data-m="iron"><span class="tick">✓</span><span class="sw" style="background:linear-gradient(90deg,#6d717a,#45484f)"></span>حديد<small>10 × 10⁻⁸ Ω·m</small></button>
+<button class="chip" data-m="tungsten"><span class="tick">✓</span><span class="sw" style="background:linear-gradient(90deg,#c9d3e0,#9aa8bb)"></span>تنغستن<small>5.6 × 10⁻⁸ Ω·m</small></button>
+</div>
+</div>
+<div class="actions sticky" id="acts">
+<div aria-live="polite" class="hint" id="hint" role="status"></div>
+<button class="btn pri" id="rec"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4" viewbox="0 0 24 24" width="18"><path d="M12 5v14M5 12h14"></path></svg>سجّل القراءة</button>
+<button class="btn next" disabled="" id="next">التالي ←</button>
+</div>
+<div class="tbl" id="tblWrap"></div>
+<div class="graph" id="graphWrap"></div>
+<div class="hidden" id="analysis"></div>
+<div class="note"><svg aria-hidden="true" class="ic" fill="none" height="18" stroke="#5f6b78" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="18"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v6M12 7.5v.5"></path></svg><span>القيم محسوبة من <bdi class="math">R = ρL/A</bdi> بمقاوميّات الجدول (1) في الكتاب عند <bdi>20 °C</bdi>، مع إهمال المقاومة الداخلية للمصدر والأميتر واعتبار الفولتميتر مثاليًا.</span></div>
+</div>
+</section>
+<!-- ================= OPENING EXPERIMENT ================= -->
+<section class="pane" id="exp0">
+<details class="safety" id="safe0" open=""><summary><svg aria-hidden="true" class="ic" fill="none" height="20" stroke="#8a5a00" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="20"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"></path><path d="M12 9v4M12 17h.01"></path></svg>إرشادات السلامة<svg class="chev" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-width="2.2" viewbox="0 0 24 24" width="16"><path d="M6 9l6 6 6-6"></path></svg></summary><p>الحذر من لمس الوصلات الكهربائية غير المعزولة والأجزاء الساخنة في الدارة، ولا ترفع جهد المصدر فوق <bdi>6 V</bdi>.</p></details>
+<div class="sec">
+<div class="goal"><span class="n">الهدف</span><span>(ص 131) استقصاء العلاقة بين فرق الجهد بين طرفي مقاومة والتيار المار فيها، وحساب المقاومة من مقلوب ميل منحنى <span class="math" dir="ltr" style="white-space:nowrap;unicode-bidi:isolate">I–V</span>.</span></div>
+<div class="chips" id="rsel">
+<button class="chip on" data-r="0"><span class="tick">✓</span><span class="sw" style="background:#2a6fb0"></span>المقاومة 1</button>
+<button class="chip" data-r="1"><span class="tick">✓</span><span class="sw" style="background:#d9541c"></span>المقاومة 2</button>
+<button class="chip" data-r="2"><span class="tick">✓</span><span class="sw" style="background:#126e84"></span>المقاومة 3</button>
+</div>
+<div class="rig">
+<svg aria-label="دارة: مصدر جهد متغير، أميتر على التوالي مع المقاومة، وفولتميتر على التوازي معها" direction="ltr" id="rig0" role="img" style="direction:ltr" viewbox="0 0 360 170"></svg>
+<div class="meters">
+<div class="meter" id="m0A"><div class="lbl">الأميتر<span class="sym">I</span></div><div class="val" id="v0A">0.000 <small>A</small></div></div>
+<div class="meter" id="m0V"><div class="lbl">الفولتميتر<span class="sym">ΔV</span></div><div class="val" id="v0V">0.00 <small>V</small></div></div>
+</div>
+</div>
+<div class="slider"><label for="vs">جهد المصدر<b id="vsOut">1.0 V</b></label><input aria-label="جهد المصدر بالفولت" id="vs" max="6" min="0" step="0.5" type="range" value="1"/></div>
+<div class="actions sticky"><div aria-live="polite" class="hint" id="hint0" role="status">ابدأ بجهد منخفض، ثم ارفعه قليلًا وسجّل القراءة في كل مرة: 4 قراءات لكل مقاومة.</div><button class="btn pri" id="rec0"><svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-width="2.4" viewbox="0 0 24 24" width="18"><path d="M12 5v14M5 12h14"></path></svg>سجّل القراءة</button></div>
+<div class="graph"><div class="gt"><span>منحنى <span class="math" dir="ltr" style="white-space:nowrap;unicode-bidi:isolate">I–V</span></span><em><bdi>1/R</bdi> = الميل</em></div><svg aria-label="رسم بياني: فرق الجهد على المحور الأفقي والتيار على المحور الرأسي" direction="ltr" id="g0" role="img" style="direction:ltr" viewbox="0 0 340 230"></svg><div class="legend" id="leg0"></div></div>
+<div class="tbl" id="tbl0"></div>
+<div class="concl" id="concl0" style="display:none"><span class="f">R = 1 / الميل</span><p>كل منحنى خط مستقيم يمر بنقطة الأصل، والنسبة <bdi class="math">ΔV/I</bdi> ثابتة لكل مقاومة: هذه مقاومات أوميّة.</p></div>
+</div>
+</section>
+<footer class="foot"><span><svg aria-hidden="true" class="ic" fill="none" height="16" stroke="#7a58ae" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24" width="16"><path d="M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3z"></path><path d="M5 17a3 3 0 0 1 3-3h11"></path></svg>كتاب الطالب · فيزياء 12 · ص 131–141</span><b>أنافس · الأردن</b></footer>
+</main>
+</div>
+
+<div class="integration-status" hidden="" id="onafes-status" role="status"></div><script defer="" src="../shared/scripts/lab.js"></script><script defer="" src="../shared/runtime.js"></script></body>
+</html>

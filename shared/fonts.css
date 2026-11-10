@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/a7fdc993f9f0387c.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(fonts/754dfc9d50cf7aab.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'IBM Plex Sans Arabic';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/02609c5ef845ef51.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'IBM Plex Sans Arabic';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(fonts/1fe214ca7ff822ff.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'IBM Plex Sans Arabic';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(fonts/9e8b030f3326946e.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'IBM Plex Sans Arabic';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(fonts/05616a64c5dca137.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'STIX Two Text';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/3c252e850ec15996.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'STIX Two Text';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url(fonts/810af4ac2922454f.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'STIX Two Text';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/9e76a14a51632161.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'STIX Two Text';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(fonts/bf240cde3a666d5c.ttf) format('truetype');
+}

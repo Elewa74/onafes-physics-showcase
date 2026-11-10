@@ -1,0 +1,4 @@
+
+body { margin: 0 }
+a { color: #3e2f7a } a:hover { color: #2a1f57 }
+details > summary { list-style: none } details > summary::-webkit-details-marker { display: none }

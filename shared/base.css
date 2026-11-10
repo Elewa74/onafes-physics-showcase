@@ -1,0 +1,26 @@
+:root{color-scheme:light;--focus:#3e2f7a}
+*{box-sizing:border-box}
+html{background:#efedf5;scrollbar-color:#a79bc2 #efedf5;scroll-behavior:smooth}
+body{margin:0!important;padding:0 10px 24px!important;display:block!important;min-width:0;font-family:'IBM Plex Sans Arabic',sans-serif;color:#1d1d2b;background:#efedf5!important}
+::selection{background:#dacdf3;color:#261a42}
+button,input,select{font-family:inherit}
+button,a,input,summary,[tabindex]{touch-action:manipulation}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+.card{position:relative!important;left:auto!important;top:auto!important;width:100%!important;height:auto!important;max-width:440px!important;margin:0 auto!important}
+.asset-nav{position:relative;display:flex;align-items:center;gap:16px;max-width:440px;margin:0 auto;padding:10px 0;min-height:64px;line-height:1.4;font-size:13px;color:#554a69}
+.asset-nav a{display:inline-flex;align-items:center;justify-content:center;min-width:64px;min-height:44px;border:1px solid #d2c8e1;border-radius:12px;text-decoration:none;font-size:14px;font-weight:600;color:#3e2f7a;background:#fff}
+.asset-nav span{flex:1;text-align:end}
+.player-shell{width:100%;max-width:600px;margin:auto;display:flex;flex-direction:column;background:#f4f2f9;border-radius:20px;overflow:hidden}
+.player-shell video{display:block;width:100%;height:auto;max-height:65vh;background:#000}
+.player-shell audio{max-width:100%;width:100%}
+.player-shell button[data-speed]{cursor:pointer;min-height:44px!important}
+.player-shell button[data-speed][aria-pressed=true]{background:#3e2f7a!important;color:#fff!important}
+.player-shell button[data-speed][aria-pressed=false]{background:#fff!important;color:#3e2f7a!important}
+.player-shell [data-seek]{cursor:pointer;border-radius:10px}
+.player-shell [data-seek][aria-current=true]{background:#e8e1f6!important;color:#362462}
+.integration-status:not([hidden]){position:fixed;bottom:16px;inset-inline:16px;max-width:520px;margin:auto;background:#fff8dc;color:#3d2e00;border:1px solid #e9cf7e;border-radius:12px;padding:14px 18px;box-shadow:0 8px 28px #2d213320;z-index:999;font-size:14px;line-height:1.8}
+img{max-width:100%}
+svg[viewBox]{max-width:100%}
+.card h1{overflow-wrap:break-word}
+@media(max-width:360px){.card .body{padding-inline:12px}.card .band{padding-inline:16px}.card .foot{flex-wrap:wrap}.card .m{font-size:14px}.player-shell>div{min-width:0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.001ms!important;transition-duration:.001ms!important}}
