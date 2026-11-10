@@ -24,3 +24,5 @@ svg[viewBox]{max-width:100%}
 .card h1{overflow-wrap:break-word}
 @media(max-width:360px){.card .body{padding-inline:12px}.card .band{padding-inline:16px}.card .foot{flex-wrap:wrap}.card .m{font-size:14px}.player-shell>div{min-width:0}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.001ms!important;transition-duration:.001ms!important}}
+
+@media(min-width:620px){html.showcase-wide .card{max-width:680px!important}html.showcase-wide .asset-nav{max-width:680px}html.showcase-wide body{padding-inline:22px!important}}

@@ -2,6 +2,7 @@
   'use strict';
   const id=document.body.dataset.assetId;
   const query=new URLSearchParams(location.search);
+  if(query.get('presentation')==='wide')document.documentElement.classList.add('showcase-wide');
   let parentOrigin=null;
   try { const u=new URL(query.get('parentOrigin')||document.referrer); if(['https:','http:'].includes(u.protocol))parentOrigin=u.origin; } catch {}
   const embedded=window.parent!==window;

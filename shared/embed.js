@@ -19,7 +19,7 @@
       this.close();const url=new URL(asset.path,this.base);
       if(!['http:','https:','file:'].includes(url.protocol))throw new Error('Unsupported protocol');
       if(url.origin!==this.base.origin||!url.pathname.startsWith(this.base.pathname))throw new Error('Asset escapes package root');
-      this.id=id;this.origin=url.origin;
+      this.id=id;this.origin=url.origin;url.searchParams.set('presentation','wide');
       if(location.protocol!=='file:')url.searchParams.set('parentOrigin',location.origin);
       const frame=document.createElement('iframe');frame.title=asset.title;frame.src=url.href;
       // Trusted package content. This frame is not a sandbox for untrusted HTML.
